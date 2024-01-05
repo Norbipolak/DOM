@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body {
+            min-height: 5000px;
+        }
+
+        #square1 {
+            width: 200px;
+            height: 200px;
+            background-color: #126456;
+        }
+        #square2 {
+            width: 200px;
+            height: 200px; 
+            margin: 15px; 
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mi az a Document Object Model</h1>
+    <p>
+        A DOM a HTML szerkezet reprezentációja objektumokban.
+        Lehetővé teszi számunkra, hogy hozzáférjünk a HTML
+        szerkezethez a JavaScript segítségével
+    </p>
+
+    <h2>HTML elemek mentése</h2>
+    <h3>Mentés ID alapján</h3>
+    <button id="btn1">Nyomd meg!</button>
+
+    <h3>Mentés class alapján</h3>
+    <div class="div">1</div>
+    <div class="div">2</div>
+    <div class="div">3</div>
+
+    <h3>Mentés tagnév alapján</h3>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+
+    <h3>Mentés name alapján</h3>
+    <input type="text" name="firstName">
+
+    <h1>Eseménykezelők</h1>
+    <h2>Eseménykezelő HTML attribútumként</h2>
+    <button onclick="alert('Jön a zombiapokalipszis!')">zombiapokalipszis!</button>
+
+    <button onclick="consoleFunc()">zombiapokalipszis!</button>
+
+    <h2>Eseménykezelő DOM element-ből</h2>
+    <h3>Klikkelés</h3>
+    <button id="click-btn">Click here!</button>
+
+    <h3>Értékváltozás</h3>
+    <select id="changeSelect">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <h3>A kurzor elem fölé helyezése</h3>
+    <div id="square1"></div>
+
+    <h1>Attrubútumok manipulációja</h1>
+    <h2>Osztály hozzáadás, elvétel, stb..</h2>
+    <div id="square2" class="blue"></div>
+    <button id="click-green">Váltás zöldre!</button>
+    <button id="click-blue">Váltás kékre!</button>
+    <button id="click-toggle">Váltakozás!</button>
+
+
+    <script src="dom.js"></script>
+
+</body>
+
+</html>
